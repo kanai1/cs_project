@@ -1,8 +1,8 @@
 <?php
 	if(isset($_POST['id']) && isset($_POST['password']))
 	{
-		$id = $_POST[''];
-		$password = $_POST[''];
+		$id = $_POST['id'];
+		$password = $_POST['password'];
 
 		$conn = mysqli_connect('localhost', 'rudrleo', 'rudrleoWkd!2', 'CSproject');
 		$sql = "SELECT * FROM user WHERE id = '{$id}' AND password = SHA2('{$password}', 256)";
