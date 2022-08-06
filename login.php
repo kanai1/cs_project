@@ -1,5 +1,5 @@
 <?php
-	if(isset($_POST['']) && isset($_POST['']))
+	if(isset($_POST['id']) && isset($_POST['password']))
 	{
 		$id = $_POST[''];
 		$password = $_POST[''];
@@ -9,7 +9,12 @@
 
 		if($result = mysqli_fetch_array(mysqli_query($conn, $sql)))
 		{
-			// 로그인 성공
+			session_start();
+
+			$_SESSION['user_name'] = $result['name'];
+			$_SESSION['user_id'] = $result['id'];
+
+			echo "<script>location.href='/';<script>";
 		}
 		else
 		{
