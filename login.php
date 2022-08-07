@@ -14,15 +14,15 @@
 			$_SESSION['user_name'] = $result['name'];
 			$_SESSION['user_id'] = $result['id'];
 
-			echo "<script>location.href='/';<script>";
+			echo "로그인 성공";
 		}
 		else
 		{
-			// 로그인 실패
+			echo "로그인 실패";
 		}
 	}
 	else
 	{
-		//잘못된 접근
+		echo "잘못된 접근";
 	}
 ?>
