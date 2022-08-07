@@ -16,7 +16,7 @@
 
 		$conn = mysqli_connect('localhost', 'rudrleo', 'rudrleoWkd!2', 'CSproject');
 		$check_overlap = "SELECT * from user WHERE id = '{$id}' OR phone = {$phone} OR email = '{$email}'";
-		$sql = "INSERT INTO user(name,id,password,phone,email) VALUES('{$name}', '{$id}', SHA2('{$pw}, 256'), $phone, '{$email}')";
+		$sql = "INSERT INTO user(name,id,password,phone,email) VALUES('{$name}', '{$id}', SHA2('{$pw}', 256), $phone, '{$email}')";
 
 		if(mysqli_query($conn, $check_overlap) == "")
 		{
