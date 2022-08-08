@@ -42,5 +42,6 @@
 	else
 	{
 		// 잘못된 접근
+		echo "wrong connection";
 	}
 ?>
