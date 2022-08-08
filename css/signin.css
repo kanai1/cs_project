@@ -89,7 +89,7 @@
       cursor: pointer;
         border-radius: 5em;
         color: #fff;
-        background-color: #6DBAA1;
+        background-color: #2EE59D;
         border: 0;
         padding-left: 40px;
         padding-right: 40px;
@@ -100,14 +100,14 @@
         box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
     }
     .fg{
-        color: #6DBAA1;
+        color: #2EE59D;
     }
     .rg{
-        color: #6DBAA1;
+        color: #2EE59D;
     }
     .forgot {
         text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-        color: #6DBAA1;
+        color: #2EE59D;
         padding-top: 15px;
     }
     
