@@ -17,8 +17,13 @@
 
         a {
             text-decoration-line: none;
-
         }
+        a { text-decoration: none; color: #7ed957; }
+        a:visited { text-decoration: none; }
+        a:hover { text-decoration: none; }
+        a:focus { text-decoration: none; }
+        a:hover, a:active { text-decoration: none; }
+
 
         body {
             background-color: #5271ff;
@@ -85,32 +90,6 @@
             font-size: 12px;
         }
 
-        .find span {
-            padding-left: 10px;
-        }
-
-        .find span::before {
-            content: '|';
-            color: #7ed957;
-            padding-right: 10px;
-        }
-
-        .find span:nth-child(1):before {
-            content: none;
-        }
-
-        .find span:nth-child(1) {
-            padding-left: 0px;
-        }
-
-        .num1 {
-            width: 60px;
-            text-align: left;
-        }
-
-        .num2 {
-            width: 235px;
-        }
     </style>
 </head>
 
@@ -149,13 +128,7 @@
 
                     <label>
                         <!-- <span>PHONE</span> -->
-                        <p style="text-align: left; font-size:12px; color:#5271ff"></p>
-                        <select class="size num1">
-                            <option value="1" selected>SKT</option>
-                            <option value="2" selected>KT</option>
-                            <option value="3" selected>LG</option>
-                        </select>
-                        <input type="tel" name="phone" placeholder="-빼고 숫자만 입력" class="size num2" required>
+                        <input type="tel" name="phone" placeholder="전화번호(-빼고 숫자만 입력)" class="size" required>
                     </label>
                     <!--전화번호-->
 
