@@ -4,6 +4,11 @@
 		$user_id = $_SESSION['user_id'];
 		$count = $_GET['count'];
 
+		if($count <= 0)
+		{
+			// 잘못된 식권 개수
+		}
+
 		$conn = mysqli_connect('localhost', 'rudrleo', 'rudrleoWkd!2', 'CSproject');
 		$sql_find = "SELECT * from member_ticket where id = '{$user_id}'";
 
