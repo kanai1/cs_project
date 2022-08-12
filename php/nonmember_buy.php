@@ -5,7 +5,7 @@
 
 	do
 	{
-		$ticket_number = uniqid();
+		$ticket_number = hash("sha256", uniqid());
 		$overlap_check = "SELECT * FROM nonmember_ticket WHERE ticket_number = '{$ticket_number}'";
 	}
 	while (mysqli_query($conn, $overlap_check));
