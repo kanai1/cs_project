@@ -1,7 +1,7 @@
 <?php
-	if(isset($_GET['']))
+	if(isset($_POST['']))
 	{
-		$user_id = $_GET[''];
+		$user_id = $_POST[''];
 
 		$conn = mysqli_connect('localhost', 'rudrleo', 'rudrleoWkd!2', 'CSproject');
 		$sql_find = "SELECT * FROM member_ticket WHERE id='{$user_id}'";
