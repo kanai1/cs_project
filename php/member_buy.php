@@ -19,7 +19,7 @@
 
 			if($result_ticket_code = mysqli_fetch_array(mysqli_query($conn, $sql_find_ticket)))
 			{
-				$now_count = $result['count'] + $now_count;
+				$now_count = $result_ticket_code['count'] + $count;
 				$sql_alter = "UPDATE member_ticket SET count={$now_count} WHERE code='{$code}'";
 
 				if(mysqli_query($conn, $sql_alter))
@@ -33,7 +33,7 @@
 			}
 			else
 			{
-				$sql_insert = "INSERT INTO member_ticket(code,count) VALUES('{$user_id}', $count)";
+				$sql_insert = "INSERT INTO member_ticket(code,count) VALUES('{$code}', $count)";
 		
 				if(mysqli_query($conn, $sql_insert))
 				{
