@@ -31,17 +31,20 @@
 					// 구매 실패
 				}
 			}
-
-			$sql_insert = "INSERT INTO member_ticket(code,count) VALUES('{$code}', {$count})";
-	
-			if(mysqli_query($conn, $sql_insert))
-			{
-				// 정상 구매
-			}
 			else
 			{
-				// 구매 실패
+				$sql_insert = "INSERT INTO member_ticket(code,count) VALUES('{$user_id}', $count)";
+		
+				if(mysqli_query($conn, $sql_insert))
+				{
+					// 정상 구매
+				}
+				else
+				{
+					// 구매 실패
+				}
 			}
+
 		}
 		else
 		{
