@@ -111,5 +111,14 @@
         padding-top: 15px;
     }
     
-  
+  .btn {
+    width: 310px;
+    height: 40px;
+    font-size: 15px;
+    background-color: #2EE59D;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
        
