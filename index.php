@@ -14,7 +14,8 @@
             $buy_url = "";
             if(isset($_SESSION['user_id']))
             {
-                echo "<a href='mypage.php' class='login'>마이페이지</a>";
+                echo "<a href='php/mypage.php' class='login'>마이페이지</a>";
+                echo "<a href='php/logout.php' class='register'>로그아웃</a>";
                 $buy_url = "member_buy.html";
             }
             else
