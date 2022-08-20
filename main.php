@@ -9,7 +9,7 @@
 	<?php
 		$conn = mysqli_connect('localhost', 'rudrleo', 'rudrleoWkd!2', 'CSproject');
 		$sql = "SELECT COUNT(*) FROM ticket_time WHERE time>DATE_SUB(now(), interval 20 minute)";
-		$count = mysqli_fetch_array(mysqli_query($conn, $sql))['count(*)'] or NULL;
+		$count = mysqli_fetch_array(mysqli_query($conn, $sql))['COUNT(*)'] or NULL;
 	?>
 </head>
 <body>
