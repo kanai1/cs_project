@@ -8,7 +8,7 @@
 		$ticket_number = hash("sha256", uniqid());
 		$overlap_check = "SELECT * FROM nonmember_ticket WHERE ticket_number = '{$ticket_number}'";
 	}
-	while (mysqli_query($conn, $overlap_check));
+	while (mysqli_fetch_array(mysqli_query($conn, $overlap_check)));
 
 	$sql_insert = "INSERT INTO nonmembeR_ticket(ticket_number, created) VALUES('{$ticket_number}', now())";
 
