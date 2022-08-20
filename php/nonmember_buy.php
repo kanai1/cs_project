@@ -15,9 +15,11 @@
 	if(mysqli_query($conn, $sql_insert))
 	{
 		// 정상 구매
+		echo $ticket_number;
 	}
 	else
 	{
 		// 구매 실패
+		echo "구매에 실패하였습니다. 잠시후 다시 시도해주세요.";
 	}
 ?>
