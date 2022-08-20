@@ -10,8 +10,17 @@
 <body>
     <header>
         <a href="index.html" class="title">경기대 식권발매</a>
-        <a href="signin.html" class="login">로그인</a>
-        <a href="signup.html" class="register">회원가입</a>
+        <?php
+            if(isset($_SESSION['user_id']))
+            {
+                echo "<a href='mypage.php' class='login'>마이페이지</a>";
+            }
+            else
+            {
+                echo "<a href='signin.html' class='login'>로그인</a>";
+                echo "<a href='signup.html' class='register'>회원가입</a>";
+            }
+        ?>
     </header>
     <section>
         <p class="explain">빠르게<br><span class="green">&nbsp맛있게</span></p>
