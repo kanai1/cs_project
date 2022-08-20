@@ -14,15 +14,15 @@
 			$_SESSION['user_name'] = $result['name'];
 			$_SESSION['user_id'] = $result['id'];
 
-			echo "<script>location.href='/'</script>";
+			echo "<script>alert('로그인에 성공했습니다.');location.href='/'</script>";
 		}
 		else
 		{
-			echo "<script>location.href='signin.html'</script>";
+			echo "<script>alert('로그인에 실패했습니다.');location.href='signin.html'</script>";
 		}
 	}
 	else
 	{
-		echo "잘못된 접근";
+		echo "<script>alert('잘못된 접근입니다.');location.href='signin.html'</script>";
 	}
 ?>
