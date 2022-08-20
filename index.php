@@ -27,7 +27,7 @@
     </header>
     <section>
         <p class="explain">빠르게<br><span class="green">&nbsp맛있게</span></p>
-        <button type="button" onclick="location.href=<?php echo $buy_url; ?>" class="buy">식권구매</button>
+        <button type="button" onclick="location.href='<?php echo $buy_url; ?>'" class="buy">식권구매</button>
     </section>
     <footer>
         <p class="foot">문의사항</p>
