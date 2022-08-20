@@ -10,7 +10,7 @@
 	}
 	while (mysqli_fetch_array(mysqli_query($conn, $overlap_check)));
 
-	$sql_insert = "INSERT INTO nonmembeR_ticket(ticket_number, created) VALUES('{$ticket_number}', now())";
+	$sql_insert = "INSERT INTO nonmember_ticket(ticket_number, created) VALUES('{$ticket_number}', now())";
 
 	if(mysqli_query($conn, $sql_insert))
 	{
