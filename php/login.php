@@ -14,11 +14,11 @@
 			$_SESSION['user_name'] = $result['name'];
 			$_SESSION['user_id'] = $result['id'];
 
-			echo "로그인 성공";
+			echo "<script>location.href='/'</script>";
 		}
 		else
 		{
-			echo "로그인 실패";
+			echo "<script>location.href='signin.html'</script>";
 		}
 	}
 	else
