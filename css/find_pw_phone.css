@@ -21,98 +21,45 @@
         font-size: 40px;
         color: #ffffff;
     }
-    .main {
-        background-color: #FFFFFF;
-        width: 400px;
-        height: 400px;
-        margin: 7em auto;
-        border-radius: 1.5em;
-        box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
-    }
-    
-    .sign {
-        padding-top: 40px;
-        color: #6DBAA1;
-        font-weight: bold;
-        font-size: 23px;
-    }
- 
-    .un {
-    width: 76%;
-    color: #6DBAA1;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 1px;
-    background: rgba(136, 126, 126, 0.04);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    outline: none;
-    box-sizing: border-box;
-    border: 2px solid rgba(0, 0, 0, 0.02);
-    margin-bottom: 50px;
-    //margin-left: 46px;
+
+#login {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    /* position: relative; */
+    /* background:#ddd; */
+}
+
+#login_form {
+    /* text-align:center; */
+    border-radius: 30px;
+    padding: 30px 50px;
+    background: #fff;
     text-align: center;
-    margin-bottom: 27px;
-    }
-    
-    form.form1 {
-        padding-top: 40px;
-        text-align: center;
-    }
-    
-    .pass {
-            width: 76%;
-    color: #6DBAA1;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 1px;
-    background: rgba(136, 126, 126, 0.04);
-    padding: 10px 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login {
+    font-size: 25px;
+    font-weight: 900;
+    color: #333;
+}
+
+.size {
+    margin-top: 20px;
+    width: 300px;
+    height: 30px;
+    padding-left: 10px;
+    background-color: #f4f4f4;
+    /* margin-left:10px; */
     border: none;
-    border-radius: 20px;
-    outline: none;
-    box-sizing: border-box;
-    border: 2px solid rgba(0, 0, 0, 0.02);
-    margin-bottom: 50px;
-    //margin-left: 46px;
-    text-align: center;
-    margin-bottom: 27px;
-    }
-    
-   
-    .un:focus, .pass:focus {
-        border: 2px solid #6DBAA1 !important;
-        
-    }
-    
-    .submit {
-      cursor: pointer;
-        border-radius: 5em;
-        color: #fff;
-        background-color: #2EE59D;
-        border: 0;
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-bottom: 10px;
-        padding-top: 10px;
-        margin-left: 35%;
-        font-size: 13px;
-        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
-    }
-    .fg{
-        color: #2EE59D;
-    }
-    .rg{
-        color: #2EE59D;
-    }
-    .forgot {
-        text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-        color: #2EE59D;
-        padding-top: 15px;
-    }
-    
-    .btn {
+    border-radius: 30px;
+}
+
+.btn {
     width: 310px;
     height: 40px;
     font-size: 15px;
@@ -121,5 +68,8 @@
     border: none;
     cursor: pointer;
     border-radius: 30px;
-    }
-       
+}
+
+.find {
+    font-size: 12px;
+}
