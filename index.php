@@ -9,7 +9,7 @@
 </head> 
 <body>
     <header>
-        <a href="index.html" class="title">경기대 식권발매</a>
+        <a href="index.php" class="title">경기대 식권발매</a>
         <?php
             $buy_url = "";
             if(isset($_SESSION['user_id']))
