@@ -71,5 +71,10 @@
 }
 
 .find {
-    font-size: 12px;
+    margin-top: 40px;
+    font-size: 15px;
+}
+
+#find_form {
+    color: #2EE59D;
 }
