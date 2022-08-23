@@ -13,7 +13,7 @@
 			echo "<script>alert('로그인 후 이용해주세요.');location.href='/';</script>";
 		}
 		
-		$conn = mysqli_connect('localhost', 'rudrleo', 'rudrleoWkd!2', 'CDproject');
+		$conn = mysqli_connect('localhost', 'rudrleo', 'rudrleoWkd!2', 'CSproject');
 		$id = $_SESSION['id'];
 		$sql = "SELECT * FROM user WHERE id='{$id}'";
         
