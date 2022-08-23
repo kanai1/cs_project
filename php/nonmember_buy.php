@@ -15,7 +15,7 @@
 	if(mysqli_query($conn, $sql_insert))
 	{
 		// 정상 구매
-		echo "<script>navigator.clipboard.writeText('{$ticket_number}');]alert('식권코드: {$ticket_number}\\n식권코드를 잊어버리시면 찾아드릴수 없습니다.');location.href='../'</script>";
+		echo "<script>navigator.clipboard.writeText('{$ticket_number}');alert('식권코드: {$ticket_number}\\n식권코드를 잊어버리시면 찾아드릴수 없습니다.');location.href='../'</script>";
 	}
 	else
 	{
