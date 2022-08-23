@@ -14,7 +14,7 @@
 		}
 		
 		$conn = mysqli_connect('localhost', 'rudrleo', 'rudrleoWkd!2', 'CSproject');
-		$id = $_SESSION['id'];
+		$id = $_SESSION['user_id'];
 		$sql = "SELECT * FROM user WHERE id='{$id}'";
         
 		$result = mysqli_fetch_array(mysqli_query($conn, $sql));
