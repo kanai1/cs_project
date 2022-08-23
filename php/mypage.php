@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="mypage.css">
 
 	<?php
-		if(!isset($_SESSION['id']))
+		if(!isset($_SESSION['user_id']))
 		{
 			echo "<script>alert('로그인 후 이용해주세요.');location.href='/';</script>";
 		}
