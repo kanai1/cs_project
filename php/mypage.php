@@ -16,8 +16,12 @@
 		$conn = mysqli_connect('localhost', 'rudrleo', 'rudrleoWkd!2', 'CDproject');
 		$id = $_SESSION['id'];
 		$sql = "SELECT * FROM user WHERE id='{$id}'";
+        
+		$result = mysqli_fetch_array(mysqli_query($conn, $sql));
+        
+        $sql_count = "SELECT * FROM member_ticket WHERE code='{$result['ticket_code']}'";
 
-		$result = $mysqli_fetch_array(mysqli_query($conn, $sql));
+        $count = mysqli_fetch_array(mysqli_query($conn, $sql_count))['count'] or 0;
 	?>
 
 </head>
@@ -32,7 +36,7 @@
     <p class="name">이름: <?php echo $result['name']; ?> </p>
     <p class="phone">전화번호: <?php echo $result['phone']; ?></p>
     <p class="email">이메일: <?php echo $result['email']; ?></p>
-    <p class="remainder">남은 식권 갯수:result</p>
+    <p class="remainder">남은 식권 갯수: <?php echo $count; ?></p>
     <p class="code">식권 코드: <?php echo $result['ticket_code']; ?></p>
     </div>
 </body>
