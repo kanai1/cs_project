@@ -15,11 +15,11 @@
 	if(mysqli_query($conn, $sql_insert))
 	{
 		// 정상 구매
-		echo $ticket_number;
+		echo "<script>alert('식권코드: {$ticket_number}\n식권코드를 잊어버리시면 찾아드릴수 없습니다.');location.href='../'</script>";
 	}
 	else
 	{
 		// 구매 실패
-		echo "구매에 실패하였습니다. 잠시후 다시 시도해주세요.";
+		echo "<script>alert('구매에 실패하였습니다. 잠시후 다시 시도해주세요.');location.href='../nonmember_buy.html'</script>";
 	}
 ?>
