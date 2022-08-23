@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: 'GangwonEduPowerExtraBoldA';
+}
+    body{
+        background-color: #5271FF;
+        }
+    a { text-decoration: none; color: rgb(254, 254, 254); }
+    a:visited { text-decoration: none; }
+    a:hover { text-decoration: none; }
+    a:focus { text-decoration: none; }
+    a:hover, a:active { text-decoration: none; }
+    header{
+        margin-top: 60px;
+        margin-left: 40px;
+        font-size: 40px;
+        color: #ffffff;
+    }
+
+#login {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    /* position: relative; */
+    /* background:#ddd; */
+}
+
+#login_form {
+    /* text-align:center; */
+    border-radius: 30px;
+    padding: 30px 50px;
+    background: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login {
+    font-size: 25px;
+    font-weight: 900;
+    color: #333;
+}
+
+.size {
+    margin-top: 10px;
+    width: 300px;
+    height: 30px;
+    padding-left: 10px;
+    background-color: #f4f4f4;
+    /* margin-left:10px; */
+    border: none;
+    border-radius: 30px;
+}
+
+.btn {
+    margin-top: 35px;
+    width: 310px;
+    height: 40px;
+    font-size: 15px;
+    background-color: #2EE59D;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
