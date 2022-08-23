@@ -6,7 +6,7 @@
 
 		if($count <= 0)
 		{
-			echo "<script>alert('0개 이상의 식권만 구매할 수 있습니다.');locaton.herf='/member_buy.html';</script>";
+			echo "<script>alert('0개 이상의 식권만 구매할 수 있습니다.');locaton.herf='../member_buy.html';</script>";
 		}
 
 		$conn = mysqli_connect('localhost', 'rudrleo', 'rudrleoWkd!2', 'CSproject');
@@ -24,11 +24,11 @@
 
 				if(mysqli_query($conn, $sql_alter))
 				{
-					echo "<script>alert('{$count}개의 식권을 구매하였습니다.');locaton.herf='/';</script>";
+					echo "<script>alert('{$count}개의 식권을 구매하였습니다.');locaton.herf='../';</script>";
 				}
 				else
 				{
-					echo "<script>alert('식권 구매에 실패했습니다. 잠시후 다시 시도해주세요.');locaton.herf='/member_buy.html';</script>";
+					echo "<script>alert('식권 구매에 실패했습니다. 잠시후 다시 시도해주세요.');locaton.herf='../member_buy.html';</script>";
 				}
 			}
 			else
@@ -37,22 +37,22 @@
 		
 				if(mysqli_query($conn, $sql_insert))
 				{
-					echo "<script>alert('{$count}개의 식권을 구매하였습니다.');locaton.herf='/';</script>";
+					echo "<script>alert('{$count}개의 식권을 구매하였습니다.');locaton.herf='../';</script>";
 				}
 				else
 				{
-					echo "<script>alert('식권 구매에 실패했습니다. 잠시후 다시 시도해주세요.');locaton.herf='/member_buy.html';</script>";
+					echo "<script>alert('식권 구매에 실패했습니다. 잠시후 다시 시도해주세요.');locaton.herf='../member_buy.html';</script>";
 				}
 			}
 
 		}
 		else
 		{
-			echo "<script>alert('잘못된 접근입니다.');locaton.herf='/member_buy.html';</script>";
+			echo "<script>alert('잘못된 접근입니다.');locaton.herf='../member_buy.html';</script>";
 		}
 	}
 	else
 	{
-		echo "<script>alert('잘못된 접근입니다.');locaton.herf='/member_buy.html';</script>";
+		echo "<script>alert('잘못된 접근입니다.');locaton.herf='../member_buy.html';</script>";
 	}
 ?>
