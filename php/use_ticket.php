@@ -23,7 +23,7 @@
 				echo "<script>alert('식권사용에 실패했습니다 잠시후 다시 이용해주세요.');location.href='../main.php';</script>";
 			}
 		}
-		else if($result = mysqli_fetch_array(mysqli_query($conn, $sql_memeber_find)))
+		else if($result = mysqli_fetch_array(mysqli_query($conn, $sql_member_find)))
 		{
 			$count = $result['count'];
 
