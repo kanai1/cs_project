@@ -38,5 +38,6 @@
 
             </div>
         </div>
+    <?php echo $_POST['id']; ?>
 </body>
 </html>
