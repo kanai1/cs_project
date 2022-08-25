@@ -11,6 +11,8 @@
 	{
 		$id = $_POST['id'];
 		$name = $_POST['name'];
+		$conn = mysqli_connect('localhost', 'rudrleo', 'rudrleoWkd!2', 'CSproject');
+
 		if(isset($_POST['email']))
 		{
 			$email = $_POST['email'];
@@ -22,7 +24,7 @@
 			}
 			else
 			{
-				echo "<script>alert('잘못된 접근입니다.');location.href='/'</script>";
+				echo "<script>alert('없는 회원정보입니다.');location.href='/'</script>";
 			}
 		}
 		else if(isset($_POST['phone']))
