@@ -1,7 +1,7 @@
 <?php
 	function send_post($id)
 	{
-		$postarray = http_build_query(array('id'=>$id));
+		$postarray = http_build_query(array('_id'=>$id));
 		$opts = array('http'=>(array('method'=>'post', 'header' => 'Content-type: application/x-www-form-urlencoded', 'content'=>$postarray)));
 		$context = stream_context_create($opts);
 		$result = file_get_contents('reset_pw.php', false, $context);
