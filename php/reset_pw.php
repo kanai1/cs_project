@@ -21,7 +21,7 @@
 
         <div id="login">
             <div id="login_form">
-                <form action="php/reset_ok.php" method="post">
+                <form action="reset_ok.php" method="post">
                
                     <label>
                         <!-- <span>PW</span> -->
