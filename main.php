@@ -23,7 +23,7 @@
                        	<div class="sik"><p>식권 코드를 입력해주세요.<br></p></div>
 						<div><span>남은 자리: <?php if($count !== NULL) echo 80 - $count; else echo"불러오기에 실패했습니다."; ?></span></div>
                         <div><input type="text" name="ticket" class="a number" placeholder="식권코드"></div> 
-                        <div><input type="submit" value="구매하기" class="a buy"></div>
+                        <div><input type="submit" value="사용하기" class="a buy"></div>
                      </form>
                 </div>
                 
