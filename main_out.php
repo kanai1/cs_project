@@ -19,9 +19,9 @@
     <section>
         <div class="box">
                 <div class="text">
-                    <form action="php/use_ticket.php" method="post">
+                    <form action="php/out.php" method="post">
                        	<div class="sik"><p>입장할때 사용했던 식권 코드를 입력해주세요.<br></p></div>
-						<div><span>남은 자리: <?php if($count !== NULL) echo 80 - $count; else echo"불러오기에 실패했습니다."; ?></span></div>
+			<div><span>남은 자리: <?php if($count !== NULL) echo 80 - $count; else echo"불러오기에 실패했습니다."; ?></span></div>
                         <div><input type="text" name="ticket" class="a number" placeholder="식권코드"></div> 
                         <div><input type="submit" value="퇴실하기" class="a buy"></div>
                      </form>
