@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>비밀번호 초기화</title>
+    <title>비밀번호 초기화<?php echo $_POST['id']; ?></title>
     <link rel="stylesheet" type="text/css" href="/css/find_pw_find.css">
 </head>
 
@@ -38,6 +38,6 @@
 
             </div>
         </div>
-    <?php echo $_POST['id']; ?>
+    
 </body>
 </html>
