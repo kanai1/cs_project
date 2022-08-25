@@ -1,10 +1,16 @@
 <?php
 	function send_post($id)
 	{
-		$postarray = http_build_query(array('_id'=>$id));
-		$opts = array('http'=>(array('method'=>'post', 'header' => 'Content-type: application/x-www-form-urlencoded', 'content'=>$postarray)));
-		$context = stream_context_create($opts);
-		$result = file_get_contents('reset_pw.php', false, $context);
+		$fields = [
+			'id' => $id,
+		];
+		$postdata = http_build_query($fields);
+		$ch = curl_init();
+		curl_setopt($ch,CURLOPT_URL, 'reset_pw.php');
+		curl_setopt($ch,CURLOPT_POST, true);
+		curl_setopt($ch,CURLOPT_POSTFIELDS, $postdata);
+		curl_setopt($ch,CURLOPT_RETURNTRANSFER, true);
+		$result = curl_exec($ch);
 		echo $result;
 	}
 
