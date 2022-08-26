@@ -6,7 +6,7 @@
 
 		if($count <= 0)
 		{
-			echo "<script>alert('0개 이상의 식권만 구매할 수 있습니다.');location.href='../member_buy.html';</script>";
+			echo "<script>alert('1개 이상의 식권만 구매할 수 있습니다.');location.href='../member_buy.html';</script>";
 		}
 
 		$conn = mysqli_connect('localhost', 'rudrleo', 'rudrleoWkd!2', 'CSproject');
